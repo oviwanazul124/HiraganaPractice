@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" />
+    <title>Kana Practice</title>
+  </head>
+  <body>
+    <form>
+      <div class="answerZone">
+        <h2 id="kana">ア</h2>
+        <p id="feedbackText"></p>
+        <input type="text" id="inputKana" />
+        <br />
+        <button id="kanaSettingsTitle">
+          Hiragana Settings (Click to Toggle)
+        </button>
+      </div>
+      <div id="kanaSettings" class="settingsZone">
+        <div id="kanaContent">
+          <!-- A row -->
+          <h5 id="kanaTitle">A</h5>
+          <hr />
+          <label><input type="checkbox" id="mARow" checked /> Select all</label>
+          <br />
+          <label
+            ><input type="checkbox" class="aRow" value="a" checked />あ</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="ka" checked />か</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="ga" checked />が</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="sa" checked />さ</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="za" checked />ざ</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="ta" checked />た</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="da" checked />だ</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="na" checked />な</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="ha" checked />は</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="ba" checked />ば</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="pa" checked />ぱ</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="ma" checked />ま</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="ya" checked />や</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="ra" checked />ら</label
+          >
+          <label
+            ><input type="checkbox" class="aRow" value="wa" checked />わ</label
+          >
+          <h6 id="kanaSubTitle">Yōon</h6>
+          <hr />
+          <label
+            ><input type="checkbox" id="aRowYoon" checked /> Select all</label
+          >
+          <br />
+          <!-- Yoon A Row -->
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="kya"
+              checked
+            />きゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="gya"
+              checked
+            />ぎゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="sha"
+              checked
+            />しゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="jya"
+              checked
+            />じゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="cha"
+              checked
+            />ちゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="dya"
+              checked
+            />ぢゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="nya"
+              checked
+            />にゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="hya"
+              checked
+            />ひゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="bya"
+              checked
+            />びゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="pya"
+              checked
+            />ぴゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="mya"
+              checked
+            />みゃ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="aRowYoon"
+              value="rya"
+              checked
+            />りゃ</label
+          >
+          <!-- I Row -->
+          <h5 id="kanaTitle">I</h5>
+          <hr />
+          <label><input type="checkbox" id="miRow" checked /> Select all</label>
+          <br />
+          <label
+            ><input type="checkbox" class="iRow" value="i" checked />い</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="ki" checked />き</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="gi" checked />ぎ</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="shi" checked />し</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="ji" checked />じ</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="chi" checked />ち</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="di" checked />ぢ</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="ni" checked />に</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="hi" checked />ひ</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="bi" checked />び</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="pi" checked />ぴ</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="mi" checked />み</label
+          >
+          <label
+            ><input type="checkbox" class="iRow" value="ri" checked />り</label
+          >
+          <!-- U Row -->
+          <h5 id="kanaTitle">U</h5>
+          <hr />
+          <label><input type="checkbox" id="mURow" checked /> Select all</label>
+          <br />
+          <label
+            ><input type="checkbox" class="uRow" value="u" checked />う</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="ku" checked />く</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="gu" checked />ぐ</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="su" checked />す</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="zu" checked />ず</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="tsu" checked />つ</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="du" checked />づ</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="nu" checked />ぬ</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="fu" checked />ふ</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="bu" checked />ぶ</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="pu" checked />ぷ</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="mu" checked />む</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="yu" checked />ゆ</label
+          >
+          <label
+            ><input type="checkbox" class="uRow" value="ru" checked />る</label
+          >
+          <!-- U Yoon Row -->
+          <h6 id="kanaSubTitle">Yōon</h6>
+          <hr />
+          <label
+            ><input type="checkbox" id="mURowYoon" checked /> Select all</label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="kyu"
+              checked
+            />きゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="gyu"
+              checked
+            />ぎゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="shu"
+              checked
+            />しゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="jyu"
+              checked
+            />じゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="chu"
+              checked
+            />ちゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="dyu"
+              checked
+            />ぢゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="nyu"
+              checked
+            />りゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="hyu"
+              checked
+            />ひゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="byu"
+              checked
+            />びゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="pyu"
+              checked
+            />ぴゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="myu"
+              checked
+            />みゅ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="uRowYoon"
+              value="ryu"
+              checked
+            />りゅ</label
+          >
+          <!-- E Row -->
+          <h5 id="kanaTitle">E</h5>
+          <hr />
+          <label><input type="checkbox" id="mERow" checked /> Select all</label>
+          <br />
+          <label
+            ><input type="checkbox" class="eRow" value="e" checked />え</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="ke" checked />け</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="ge" checked />げ</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="se" checked />せ</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="ze" checked />ぜ</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="te" checked />て</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="de" checked />で</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="ne" checked />ね</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="he" checked />へ</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="be" checked />べ</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="pe" checked />ぺ</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="me" checked />め</label
+          >
+          <label
+            ><input type="checkbox" class="eRow" value="re" checked />れ</label
+          >
+          <h5 id="kanaTitle">O</h5>
+          <hr />
+          <label><input type="checkbox" id="mORow" checked /> Select all</label>
+          <br />
+          <label
+            ><input type="checkbox" class="oRow" value="o" checked />お</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="ko" checked />こ</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="go" checked />ご</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="so" checked />そ</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="zo" checked />ぞ</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="to" checked />と</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="do" checked />ど</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="no" checked />の</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="ho" checked />ほ</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="bo" checked />ぼ</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="po" checked />ぽ</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="mo" checked />も</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="yo" checked />よ</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="ro" checked />ろ</label
+          >
+          <label
+            ><input type="checkbox" class="oRow" value="n" checked />ん</label
+          >
+          <!-- O Yoon Row -->
+          <h6 id="kanaSubTitle">Yōon</h6>
+          <hr />
+          <label
+            ><input type="checkbox" id="mORowYoon" checked /> Select all</label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="kyo"
+              checked
+            />きょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="gyo"
+              checked
+            />ぎょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="sho"
+              checked
+            />しょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="jyo"
+              checked
+            />じょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="cho"
+              checked
+            />ちょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="dyo"
+              checked
+            />ぢょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="nyo"
+              checked
+            />にょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="hyo"
+              checked
+            />ひょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="byo"
+              checked
+            />びょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="pyo"
+              checked
+            />ぴょ</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="oRowYoon"
+              value="ryo"
+              checked
+            />りょ</label
+          >
+        </div>
+      </div>
+    </form>
+
+    <div class="footer">
+      <p>
+        <a href="https://github.com/oviwanazul124">Javier Garcia</a> 2026 |
+        <a href="https://github.com/oviwanazul124/KanaPracticte">Code</a>
+      </p>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="globalcheckbox.js"></script>
+  </body>
+</html>
